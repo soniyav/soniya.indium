@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+   
+    android:background="@drawable/btnbg">
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Sl" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="Modifier string" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:text="Rate" />
+
+        
+       
+
+    </LinearLayout>
+  <View
+             android:layout_width="match_parent"
+             android:layout_height="3dp"
+             android:background="#000000"/>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:layout_weight=".4" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/removebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btnbg"
+            android:text="Remove" />
+
+        <Button
+            android:id="@+id/keyboardbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Keyboard"
+            android:background="@drawable/btnbg" />
+
+        <Button
+            android:id="@+id/commentbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comments" 
+            android:background="@drawable/btnbg"/>
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Ok" 
+            android:background="@drawable/btnbg"/>
+
+    </LinearLayout>
+         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+          
+            android:gravity="center"
+            android:text="Select Modifiers" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="3dp"
+             android:background="#000000"/>
+	
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+         android:baselineAligned="false"
+         android:orientation="horizontal">
+
+        
+
+         <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:numColumns="3"
+        >
+    </GridView>
+   
+    </LinearLayout>
+
+    
+	
+</LinearLayout>
